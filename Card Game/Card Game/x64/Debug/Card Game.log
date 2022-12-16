@@ -1,0 +1,25 @@
+﻿  card.cpp
+  deck.cpp
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.34.31933\include\type_traits(1707,79): error C2794: 'type': is not a member of any direct or indirect base class of 'std::_Invoke_traits_zero<void,_Urng &>'
+          with
+          [
+              _Urng=_Urng0
+          ]
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.34.31933\include\xutility(6011,18): message : see reference to alias template instantiation 'std::_Invoke_result_t<_Urng&,>' being compiled
+          with
+          [
+              _Urng=_Urng0
+          ]
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.34.31933\include\algorithm(4949,58): message : see reference to class template instantiation 'std::_Rng_from_urng<__int64,_Urng0>' being compiled
+C:\Users\Jack\source\repos\Card Game\Card Game\deck.cpp(33,47): message : see reference to function template instantiation 'void std::shuffle<std::_Vector_iterator<std::_Vector_val<std::_Simple_types<_Ty>>>,int&>(_RanIt,_RanIt,_Urng)' being compiled
+          with
+          [
+              _Ty=Card *,
+              _RanIt=std::_Vector_iterator<std::_Vector_val<std::_Simple_types<Card *>>>,
+              _Urng=int &
+          ]
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.34.31933\include\xutility(6011,1): error C2938: 'std::_Invoke_result_t' : Failed to specialize alias template
+  main.cpp
+  Generating Code...
+C:\Users\Jack\source\repos\Card Game\Card Game\card.cpp(54): warning C4715: 'Card::convertValue': not all control paths return a value
+C:\Users\Jack\source\repos\Card Game\Card Game\card.cpp(22): warning C4715: 'Card::convertSuit': not all control paths return a value
